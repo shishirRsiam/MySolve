@@ -16,17 +16,20 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(NULL);
 
-    str s; cin>>s;
+    int n; cin>>n;
+    vec a(n);
 
-    int n = s.size(), cnt = 0;
-    while(n>1)
+    loop(0,i,n) cin>>a[i];
+
+    int ans = 0;
+    loop(1,i,n-1) 
     {
-        cnt++;
-        int sum = 0;
-        loop(0,i,n) sum += (s[i]-'0');
-        s = to_string(sum);
-        n = s.size();
+        if(a[i-1]==1 and a[i+1]==1 and a[i]==0)
+        {
+            a[i+1] = 0;
+            ans++;
+        }
     }
-    cout<<cnt<<"\n";
+    cout<<ans<<"\n";
     return 0;
 }

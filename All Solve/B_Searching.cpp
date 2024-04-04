@@ -16,17 +16,15 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(NULL);
 
-    str s; cin>>s;
+    int n; cin>>n;
+    vec a(n);
+    loop(0,i,n) cin>>a[i];
 
-    int n = s.size(), cnt = 0;
-    while(n>1)
-    {
-        cnt++;
-        int sum = 0;
-        loop(0,i,n) sum += (s[i]-'0');
-        s = to_string(sum);
-        n = s.size();
-    }
-    cout<<cnt<<"\n";
+    int x; cin>>x;
+
+    auto it = find(bee(a), x);
+    if(it == a.end()) cout<<"-1\n";
+    else cout<<distance(a.begin(), it);
+
     return 0;
 }

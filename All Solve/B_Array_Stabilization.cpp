@@ -16,17 +16,18 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(NULL);
 
-    str s; cin>>s;
+    int n; cin>>n;
+    vec a(n);
+    loop(0,i,n) cin>>a[i];
 
-    int n = s.size(), cnt = 0;
-    while(n>1)
+    if(n==2) 
     {
-        cnt++;
-        int sum = 0;
-        loop(0,i,n) sum += (s[i]-'0');
-        s = to_string(sum);
-        n = s.size();
+        cout<<"0\n";
+        return 0;
     }
-    cout<<cnt<<"\n";
+
+    sort(bee(a));
+    cout<<(min(a[n-1]-a[1],a[n-2]-a[0]));
+
     return 0;
 }

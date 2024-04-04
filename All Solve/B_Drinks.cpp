@@ -1,7 +1,8 @@
 #include<bits/stdc++.h>
-#define str string 
+#define str string
 #define ll long long 
-#define vec vector<ll> 
+#define pi pair<ll,ll>
+#define vec vector<ll>
 #define py cout<<"YES\n"
 #define pn cout<<"NO\n"
 #define pb(x) push_back(x)
@@ -16,17 +17,14 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(NULL);
 
-    str s; cin>>s;
-
-    int n = s.size(), cnt = 0;
-    while(n>1)
+    int n; cin>>n;
+    double sum = 0.00;
+    loop(0,i,n)
     {
-        cnt++;
-        int sum = 0;
-        loop(0,i,n) sum += (s[i]-'0');
-        s = to_string(sum);
-        n = s.size();
+        int a; cin>>a;
+        sum += a;
     }
-    cout<<cnt<<"\n";
+    double x = sum/n;
+    cout<<fixed<<setprecision(12)<<x<<"\n";
     return 0;
 }

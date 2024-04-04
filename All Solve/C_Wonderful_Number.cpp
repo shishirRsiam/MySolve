@@ -9,24 +9,32 @@
 #define loop(s,i,n) for(int i=s;i<n;i++)
 using namespace std;
 
+bool palindrome(int n)
+{
+    vec binary;
+    while(n>0)
+    {
+        int num = n%2;
+        n /= 2;
+        binary.pb(num);
+    }
+    vec tmp = binary;
+    reverse(bee(tmp));
+    return binary == tmp;
+}
 
+void ok()
+{
+    ll n; cin>>n;
+    palindrome(n) ? py:pn;
+}
 
 int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
 
-    str s; cin>>s;
+    ok();
 
-    int n = s.size(), cnt = 0;
-    while(n>1)
-    {
-        cnt++;
-        int sum = 0;
-        loop(0,i,n) sum += (s[i]-'0');
-        s = to_string(sum);
-        n = s.size();
-    }
-    cout<<cnt<<"\n";
     return 0;
 }

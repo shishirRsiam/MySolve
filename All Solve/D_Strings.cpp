@@ -16,17 +16,11 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(NULL);
 
-    str s; cin>>s;
+    str a, b; cin>>a>>b;
+    cout<<a.size()<<" "<<b.size()<<endl;
+    cout<<a<<b<<endl;
+    swap(a[0], b[0]);
+    cout<<a<<" "<<b<<endl;
 
-    int n = s.size(), cnt = 0;
-    while(n>1)
-    {
-        cnt++;
-        int sum = 0;
-        loop(0,i,n) sum += (s[i]-'0');
-        s = to_string(sum);
-        n = s.size();
-    }
-    cout<<cnt<<"\n";
     return 0;
 }
