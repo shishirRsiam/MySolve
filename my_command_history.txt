@@ -1,0 +1,20 @@
+25-03-2025 06:39:34  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+25-03-2025 06:39:35  338  g++ --version
+25-03-2025 06:39:37  339  g++ --version
+25-03-2025 06:46:15  340  g++ --version
+25-03-2025 06:49:53  341  g++ --version
+25-03-2025 06:50:26  342  g++ --version
+25-03-2025 06:51:22  343  ls "C:\ProgramData\chocolatey\lib\mingw\tools\install"
+25-03-2025 06:54:09  344  g++ --version
+25-03-2025 06:54:42  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+25-03-2025 06:54:45  338  g++ --version
+25-03-2025 06:54:47  339  g++ --version
+25-03-2025 06:55:04  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+25-03-2025 06:55:04  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+25-03-2025 06:55:10  338  g++ --version
+25-03-2025 06:55:55  339  ls
+25-03-2025 07:01:37  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+25-03-2025 07:01:37  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+25-03-2025 07:54:04  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+25-03-2025 07:54:04  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+25-03-2025 08:24:48  338  git add .
